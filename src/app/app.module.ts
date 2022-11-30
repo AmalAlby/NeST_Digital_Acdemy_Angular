@@ -10,6 +10,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { ViewcoursesComponent } from './viewcourses/viewcourses.component';
 
 
 const myroute:Routes=[
@@ -32,6 +33,10 @@ const myroute:Routes=[
   {
     path:"admlogin",
     component:AdminloginComponent
+  },
+  {
+    path:"viewc",
+    component:ViewcoursesComponent
   }
 ]
 
@@ -42,7 +47,8 @@ const myroute:Routes=[
     GalleryComponent,
     AboutusComponent,
     ContactusComponent,
-    AdminloginComponent
+    AdminloginComponent,
+    ViewcoursesComponent
   ],
   imports: [
     BrowserModule,
