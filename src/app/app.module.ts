@@ -15,6 +15,7 @@ import { ViewfriendsComponent } from './viewfriends/viewfriends.component';
 import { AddcoursesComponent } from './addcourses/addcourses.component';
 import { FormsModule } from '@angular/forms';
 import { AddfriendsComponent } from './addfriends/addfriends.component';
+import { EmpportalComponent } from './empportal/empportal.component';
 
 
 const myroute:Routes=[
@@ -67,7 +68,8 @@ const myroute:Routes=[
     ViewcoursesComponent,
     ViewfriendsComponent,
     AddcoursesComponent,
-    AddfriendsComponent
+    AddfriendsComponent,
+    EmpportalComponent
   ],
   imports: [
     BrowserModule,
