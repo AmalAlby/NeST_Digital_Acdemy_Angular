@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 
 const myroute:Routes=[
@@ -27,6 +28,10 @@ const myroute:Routes=[
   {
     path:"contact",
     component:ContactusComponent
+  },
+  {
+    path:"admlogin",
+    component:AdminloginComponent
   }
 ]
 
@@ -36,7 +41,8 @@ const myroute:Routes=[
     HomepageComponent,
     GalleryComponent,
     AboutusComponent,
-    ContactusComponent
+    ContactusComponent,
+    AdminloginComponent
   ],
   imports: [
     BrowserModule,
