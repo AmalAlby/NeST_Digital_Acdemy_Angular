@@ -14,6 +14,7 @@ import { ViewcoursesComponent } from './viewcourses/viewcourses.component';
 import { ViewfriendsComponent } from './viewfriends/viewfriends.component';
 import { AddcoursesComponent } from './addcourses/addcourses.component';
 import { FormsModule } from '@angular/forms';
+import { AddfriendsComponent } from './addfriends/addfriends.component';
 
 
 const myroute:Routes=[
@@ -48,6 +49,10 @@ const myroute:Routes=[
   {
     path:"addc",
     component:AddcoursesComponent
+  },
+  {
+    path:"addf",
+    component:AddfriendsComponent
   }
 ]
 
@@ -61,7 +66,8 @@ const myroute:Routes=[
     AdminloginComponent,
     ViewcoursesComponent,
     ViewfriendsComponent,
-    AddcoursesComponent
+    AddcoursesComponent,
+    AddfriendsComponent
   ],
   imports: [
     BrowserModule,
