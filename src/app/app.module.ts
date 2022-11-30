@@ -38,6 +38,10 @@ const myroute:Routes=[
   {
     path:"viewc",
     component:ViewcoursesComponent
+  },
+  {
+    path:"viewf",
+    component:ViewcoursesComponent
   }
 ]
 
