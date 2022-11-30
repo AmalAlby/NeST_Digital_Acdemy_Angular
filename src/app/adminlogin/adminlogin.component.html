@@ -8,14 +8,14 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label"><h5>Username</h5></label>
-                    <input type="text" class="form-control">
+                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label"><h5>Password</h5></label>
-                    <input type="text" class="form-control">
+                    <input name="password" [(ngModel)]="password" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-success">LOGIN</button>
+                    <button (click)="admlog()" class="btn btn-success">LOGIN</button>
                 </div>
             </div>
         </div>
