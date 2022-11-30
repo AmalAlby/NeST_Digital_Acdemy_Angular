@@ -2,17 +2,15 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row">
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" *ngFor="let i of data">
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title"></h5>
-                          <p class="card-text"></p>
+                          <h5 class="card-title">{{i.name}}</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item"></li>
-                          <li class="list-group-item"></li>
-                          <li class="list-group-item"></li>
+                          <li class="list-group-item">{{i.friendName}}</li>
+                          <li class="list-group-item">{{i.friendNickName}}</li>
+                          <li class="list-group-item">{{i.DescribeYourFriend}}</li>
                         </ul>
                       </div>
                 </div>
