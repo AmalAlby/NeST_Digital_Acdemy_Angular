@@ -17,6 +17,9 @@ import { AddfriendsComponent } from './addfriends/addfriends.component';
 import { EmpportalComponent } from './empportal/empportal.component';
 import { EmpregComponent } from './empreg/empreg.component';
 import { FormsModule } from '@angular/forms';
+import { MainnavbarComponent } from './mainnavbar/mainnavbar.component';
+import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
+import { EmpnavbarComponent } from './empnavbar/empnavbar.component';
 
 
 const myroute:Routes=[
@@ -46,7 +49,7 @@ const myroute:Routes=[
   },
   {
     path:"viewf",
-    component:ViewcoursesComponent
+    component:ViewfriendsComponent
   },
   {
     path:"addc",
@@ -79,7 +82,10 @@ const myroute:Routes=[
     AddcoursesComponent,
     AddfriendsComponent,
     EmpportalComponent,
-    EmpregComponent
+    EmpregComponent,
+    MainnavbarComponent,
+    AdminnavbarComponent,
+    EmpnavbarComponent
   ],
   imports: [
     BrowserModule,
