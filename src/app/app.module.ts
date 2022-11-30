@@ -12,6 +12,8 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { ViewcoursesComponent } from './viewcourses/viewcourses.component';
 import { ViewfriendsComponent } from './viewfriends/viewfriends.component';
+import { AddcoursesComponent } from './addcourses/addcourses.component';
+import { FormsModule } from '@angular/forms';
 
 
 const myroute:Routes=[
@@ -42,6 +44,10 @@ const myroute:Routes=[
   {
     path:"viewf",
     component:ViewcoursesComponent
+  },
+  {
+    path:"addc",
+    component:AddcoursesComponent
   }
 ]
 
@@ -54,12 +60,14 @@ const myroute:Routes=[
     ContactusComponent,
     AdminloginComponent,
     ViewcoursesComponent,
-    ViewfriendsComponent
+    ViewfriendsComponent,
+    AddcoursesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myroute),
+    FormsModule,
     HttpClientModule
   ],
   providers: [],
