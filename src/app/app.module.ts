@@ -11,6 +11,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { ViewcoursesComponent } from './viewcourses/viewcourses.component';
+import { ViewfriendsComponent } from './viewfriends/viewfriends.component';
 
 
 const myroute:Routes=[
@@ -37,6 +38,10 @@ const myroute:Routes=[
   {
     path:"viewc",
     component:ViewcoursesComponent
+  },
+  {
+    path:"viewf",
+    component:ViewcoursesComponent
   }
 ]
 
@@ -48,7 +53,8 @@ const myroute:Routes=[
     AboutusComponent,
     ContactusComponent,
     AdminloginComponent,
-    ViewcoursesComponent
+    ViewcoursesComponent,
+    ViewfriendsComponent
   ],
   imports: [
     BrowserModule,
