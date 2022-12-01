@@ -2,26 +2,59 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <table class="table">
+            <table class="table table-stripped md-5">
                 <thead>
                   <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">CourseTitle</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Duration</th>
-                    <th scope="col">Venue</th>
-                    <th scope="col">Description</th>
+                    <th scope="col" class="text-center">ID</th>
+                    <th scope="col" class="text-center">CourseTitle</th>
+                    <th scope="col" class="text-center">Date</th>
+                    <th scope="col" class="text-center">Duration</th>
+                    <th scope="col" class="text-center">Venue</th>
+                    <th scope="col" class="text-center">Description</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr  *ngFor="let i of course">
-                    <th scope="row">{{i._id}}</th>
-                    <td>{{i.courseTitle}}</td>
-                    <td>{{i.courseDate}}</td>
-                    <td>{{i.courseDuration}}</td>
-                    <td>{{i.courseVenue}}</td>
-                    <td>{{i.courseDescription}}</td>
-                  </tr>
+
+                  <ng-container *ngIf="loading; then loadingScreen; else dataScreen" ></ng-container>
+
+                  <ng-template #loadingScreen>
+                    <div class="spinner-border text-primary" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-secondary" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-success" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-danger" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-warning" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-info" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-light" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-dark" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  </ng-template>
+
+                  <ng-template #dataScreen>
+                    <tr  *ngFor="let i of course">
+                      <th scope="row">{{i._id}}</th>
+                      <td class="text-center">{{i.courseTitle}}</td>
+                      <td class="text-center">{{i.courseDate}}</td>
+                      <td class="text-center">{{i.courseDuration}}</td>
+                      <td class="text-center">{{i.courseVenue}}</td>
+                      <td class="text-center">{{i.courseDescription}}</td>
+                    </tr>
+                  </ng-template>
+
                 </tbody>
               </table>
         </div>

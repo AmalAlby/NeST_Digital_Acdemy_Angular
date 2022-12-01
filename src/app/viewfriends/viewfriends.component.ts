@@ -15,11 +15,15 @@ export class ViewfriendsComponent {
     api.friend().subscribe(
 
       (response)=>{
-        this.data=response;
+        this.loading=false
+        console.log(response)
+        this.data=response
       }
 
     )
 
   }
+
+  loading:boolean=true
 
 }
