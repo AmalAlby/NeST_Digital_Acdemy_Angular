@@ -15,11 +15,14 @@ export class ViewcoursesComponent {
     api.fetchcourses().subscribe(
 
       (response)=>{
-        this.course=response;
+        this.loading=false
+        console.log(response)
+        this.course=response
       }
-
     )
 
   }
+
+  loading:boolean=true
 
 }
